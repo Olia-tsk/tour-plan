@@ -594,6 +594,9 @@ template {
     font-size: 12px;
     line-height: 15px;
   }
+  .navbar__search {
+    margin-left: auto;
+  }
   .search__input {
     width: 340px;
   }
