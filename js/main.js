@@ -2,10 +2,16 @@ var mySwiper = new Swiper('.swiper-container', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-    speed: 500,
+    speed: 300,
 
     autoplay: {
-        delay: 4000,
+        delay: 4500,
+    },
+
+    effect: 'fade',
+
+    fadeEffect: {
+        crossFade: true
     },
 
     // Navigation arrows
