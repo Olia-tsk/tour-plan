@@ -885,13 +885,11 @@ template {
   }
   .booking {
     width: 100%;
-    min-width: 280px;
     margin-bottom: 20px;
     margin-right: 0;
   }
   .map {
     width: 100%;
-    min-width: 280px;
   }
 }
 
