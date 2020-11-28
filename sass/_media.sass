@@ -18,13 +18,17 @@
       margin-bottom: 30px
     &-right
       flex-direction: row
-      justify-content: space-evenly
   .slider
     width: 100%
   .swiper-slide
     &__image
       width: 100%
       object-fit: cover
+  .booking
+    width: 100%
+    margin-right: 20px
+  .map
+    width: 100%
 
 @media (max-width: 992px)
   .container
@@ -62,8 +66,6 @@
       margin-left: 47px
   .hotel
     padding-top: 23px
-  .booking
-    margin-right: 10px
 
 @media (max-width: 730px)
   .navbar
@@ -101,14 +103,8 @@
       &__offer
         order: -1
         margin-left: 0
-    &-right
-      justify-content: space-evenly
   .stars
     flex-basis: auto
-  .booking
-    width: 280px
-  .map
-    width: 280px
 
 @media (max-width: 576px)
   .navbar
@@ -137,5 +133,9 @@
     width: 87%
   .slider
     height: 179px
+    &-button
+      width: 12px
+      height: 12px
+      background-size: 4px
   .map
     height: 172px
