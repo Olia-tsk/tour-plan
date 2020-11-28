@@ -1,12 +1,12 @@
 @media (max-width: 1200px)
   .container
     max-width: 960px
-  .slider
-    width: 580px
-  .swiper-slide
-    &__image
-      height: 100%
-      object-fit: cover
+  .hotel
+    &-slider
+      width: 580px
+      &__image
+        height: 100%
+        object-fit: cover
 
 @media (max-width: 1024px)
   .container
@@ -14,16 +14,15 @@
   .hotel
     &-grid
       flex-direction: column
+    &-slider
+      width: 100%
+      &__image
+        width: 100%
+        object-fit: cover
     &__slider
       margin-bottom: 30px
     &-right
       flex-direction: row
-  .slider
-    width: 100%
-  .swiper-slide
-    &__image
-      width: 100%
-      object-fit: cover
   .booking
     width: 100%
     margin-right: 20px
@@ -57,6 +56,12 @@
     width: 340px
   .map
     width: 340px
+  .reviews
+    &-slider
+      &__item
+        max-width: 579px
+      &__text
+        max-width: 455px
 
 @media (max-width: 768px)
   .container, .newsletter-wrapper
@@ -109,6 +114,12 @@
         margin-left: 0
   .stars
     flex-basis: auto
+  .reviews
+    &-slider
+      &__item
+        max-width: 500px
+      &__text
+        max-width: 376px
 
 @media (max-width: 660px)
   .newsletter
@@ -124,10 +135,10 @@
       padding-bottom: 28px
   .logo
     width: 99px
-  .slider
-    height: 351px
-    margin-bottom: 20px
   .hotel
+    &-slider
+      height: 351px
+      margin-bottom: 20px
     &-right
       flex-direction: column
   .booking
@@ -140,6 +151,22 @@
     //min-width: 280px
   .newsletter
     padding: 76px 0 83px 0
+  .reviews
+    &-slider
+      &__item
+        width: 100%
+        &::after, &::before
+          display: none
+      &__text
+        width: 100%
+      &__button
+        top: 31px
+        &--prev
+          left: 25%
+          transform: translate(-50%, 0)
+        &--next
+          right: 25%
+          transform: translate(50%, 0)
 
 @media (max-width: 320px)
   .container, .newsletter-wrapper
@@ -148,12 +175,12 @@
     padding-bottom: 40px
     &-grid
       margin-top: 18px
-  .slider
-    height: 179px
-    &-button
-      width: 12px
-      height: 12px
-      background-size: 4px
+    &-slider
+      height: 179px
+      &__button
+        width: 12px
+        height: 12px
+        background-size: 4px
   .map
     height: 172px
   .newsletter
@@ -163,3 +190,7 @@
         font-size: 30px
   .subscribe
     width: 280px
+  .reviews
+    &-slider
+      &__item
+        padding: 0 29px 36px
