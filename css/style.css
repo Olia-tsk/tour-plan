@@ -578,7 +578,7 @@ template {
 .swiper-container {
   position: relative;
   width: 100%;
-  height: 450px;
+  height: 100%;
   border-radius: 8px;
 }
 
@@ -595,6 +595,7 @@ template {
 
 .slider {
   width: 728px;
+  height: 450px;
 }
 
 .slider-button {
@@ -725,18 +726,43 @@ template {
   width: 347px;
   height: 213px;
   background-color: lightblue;
-  border-radius: 4px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
   }
+  .slider {
+    width: 580px;
+  }
+  .swiper-slide__image {
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 @media (max-width: 1024px) {
   .container {
     max-width: 880px;
+  }
+  .hotel-grid {
+    flex-direction: column;
+  }
+  .hotel__slider {
+    margin-bottom: 30px;
+  }
+  .hotel-right {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .slider {
+    width: 100%;
+  }
+  .swiper-slide__image {
+    width: 100%;
+    object-fit: cover;
   }
 }
 
@@ -765,17 +791,29 @@ template {
   .search__input {
     width: 340px;
   }
+  .hotel-right {
+    justify-content: space-between;
+  }
+  .booking {
+    width: 340px;
+  }
+  .map {
+    width: 340px;
+  }
 }
 
 @media (max-width: 768px) {
   .container {
-    width: 88%;
+    width: 91%;
   }
   .navbar__search {
     margin-left: 47px;
   }
   .hotel {
     padding-top: 23px;
+  }
+  .booking {
+    margin-right: 10px;
   }
 }
 
@@ -822,8 +860,17 @@ template {
     order: -1;
     margin-left: 0;
   }
+  .hotel-right {
+    justify-content: space-evenly;
+  }
   .stars {
     flex-basis: auto;
+  }
+  .booking {
+    width: 280px;
+  }
+  .map {
+    width: 280px;
   }
 }
 
@@ -834,6 +881,35 @@ template {
   }
   .logo {
     width: 99px;
+  }
+  .slider {
+    height: 351px;
+    margin-bottom: 20px;
+  }
+  .hotel-right {
+    flex-direction: column;
+  }
+  .booking {
+    width: 100%;
+    min-width: 280px;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+  .map {
+    width: 100%;
+    min-width: 280px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    width: 87%;
+  }
+  .slider {
+    height: 179px;
+  }
+  .map {
+    height: 172px;
   }
 }
 /*# sourceMappingURL=style.css.map */
