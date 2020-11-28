@@ -611,6 +611,10 @@ template {
   background-size: 10px;
 }
 
+.slider-button:focus {
+  outline: none;
+}
+
 .slider-button--next {
   right: 18px;
   background-image: url(../img/icon-next.svg);
