@@ -873,6 +873,10 @@ template {
   z-index: 50;
 }
 
+.reviews-slider__button:focus {
+  outline: none;
+}
+
 .reviews-slider__button--prev {
   left: 0;
   background-image: url(../img/reviews-slider-prev.svg);
