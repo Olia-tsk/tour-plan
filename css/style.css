@@ -928,6 +928,10 @@ template {
   align-items: center;
 }
 
+.reviews-slider__rating-star {
+  margin-right: 3px;
+}
+
 .reviews-slider__text {
   width: 537px;
   margin: auto;
