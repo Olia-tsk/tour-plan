@@ -1135,6 +1135,7 @@ template {
 
 .packages {
   padding: 40px 0 70px 0;
+  border: 2px solid black;
 }
 
 .packages__title {
@@ -1172,18 +1173,13 @@ template {
 }
 
 .packages-card::before {
-  content: 'Flash Offer';
+  content: '';
   position: absolute;
-  padding: 4px 9px;
-  top: 26px;
+  top: -10px;
   left: 0;
-  font-weight: 600;
-  font-size: 8px;
-  line-height: 10px;
-  text-align: center;
-  color: #FFFFFF;
-  background-color: #EC1F46;
-  border-radius: 0px 4px 4px 0px;
+  width: 60px;
+  height: 18px;
+  background-color: red;
 }
 
 .packages-card__info {
