@@ -142,9 +142,52 @@
       margin-top: 56px
 
 @media (max-width: 730px)
+  body
+    padding-top: 70px
   .navbar
-    &__search, &-menu, &__user
+    &__mobile
+      &--fixed
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        z-index: 99
+    &__search, &__user
+      &--mobile
+        &--hidden
+          display: none
+    &__search
+      margin: 0
+      margin-bottom: 39px
+    &__user
+      flex-direction: column
+      justify-content: center
+      margin-bottom: 27px
+    &-bottom
       display: none
+      &__mobile
+        &--visible
+          display: block
+          position: fixed
+          padding-top: 32px
+          left: 0
+          top: 70px
+          right: 0
+          bottom: 0
+    &-menu
+      flex-direction: column
+      padding-top: 0
+      &__item
+        margin-bottom: 20px
+        &--mobile
+          &--visible
+            display: block
+            margin-bottom: 0
+  .user
+    &__name
+      color: $light
+      padding: 0
+      padding-top: 10px
   .menu
     &-button
       width: 16px
@@ -232,6 +275,9 @@
     &-top
       padding-top: 28px
       padding-bottom: 28px
+  .search
+    &__input
+      width: 100%
   .logo
     width: 99px
   .hotel
