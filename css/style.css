@@ -1587,6 +1587,7 @@ template {
     display: none;
   }
   .navbar-bottom__mobile--visible {
+    overflow: scroll;
     display: block;
     position: fixed;
     padding-top: 32px;
