@@ -8,6 +8,7 @@ require 'phpmailer/Exception.php';
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
+$subscribe = $_POST['subscription'];
 
 // Формирование самого письма
 $title = "Incoming message Best Tour Plan";
