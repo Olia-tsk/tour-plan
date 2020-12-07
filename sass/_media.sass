@@ -110,6 +110,11 @@
     &-service
       margin-left: 0
 
+@media (max-width: 910px)
+  .modal
+    &__dialog
+      padding: 33px 55px
+
 @media (max-width: 768px)
   .container, .newsletter-wrapper
     width: 91%
@@ -140,6 +145,13 @@
       flex-basis: 47%
     &-service
       margin-top: 56px
+  .modal
+    &__btn
+      flex-direction: column
+      align-items: flex-start
+    &__info
+      order: -1
+      margin-bottom: 15px
 
 @media (max-width: 730px)
   body
@@ -229,6 +241,9 @@
         max-width: 500px
       &__text
         max-width: 376px
+  .modal
+    &__dialog
+      width: 55%
 
 @media (max-width: 660px)
   .newsletter
@@ -270,6 +285,9 @@
         grid-row: 6
     &__input
       flex-basis: 100%
+  .modal
+    &__dialog
+      width: 60%
 
 @media (max-width: 576px)
   .navbar
@@ -333,6 +351,9 @@
       flex-direction: column
     &__payment
       margin-top: 10px
+  .modal
+    &__dialog
+      width: 70%
 
 @media (max-width: 320px)
   .container, .newsletter-wrapper
@@ -404,3 +425,6 @@
         margin-right: 5px
         &:last-child
           margin-right: 0
+  .modal
+    &__dialog
+      width: 90%

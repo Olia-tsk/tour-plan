@@ -1617,6 +1617,12 @@ template {
   }
 }
 
+@media (max-width: 910px) {
+  .modal__dialog {
+    padding: 33px 55px;
+  }
+}
+
 @media (max-width: 768px) {
   .container, .newsletter-wrapper {
     width: 91%;
@@ -1656,6 +1662,14 @@ template {
   }
   .footer-service {
     margin-top: 56px;
+  }
+  .modal__btn {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .modal__info {
+    order: -1;
+    margin-bottom: 15px;
   }
 }
 
@@ -1759,6 +1773,9 @@ template {
   .reviews-slider__text {
     max-width: 376px;
   }
+  .modal__dialog {
+    width: 55%;
+  }
 }
 
 @media (max-width: 660px) {
@@ -1809,6 +1826,9 @@ template {
   }
   .footer__input {
     flex-basis: 100%;
+  }
+  .modal__dialog {
+    width: 60%;
   }
 }
 
@@ -1885,6 +1905,9 @@ template {
   }
   .footer__payment {
     margin-top: 10px;
+  }
+  .modal__dialog {
+    width: 70%;
   }
 }
 
@@ -1981,6 +2004,9 @@ template {
   }
   .footer-service__item:last-child {
     margin-right: 0;
+  }
+  .modal__dialog {
+    width: 90%;
   }
 }
 /*# sourceMappingURL=style.css.map */
