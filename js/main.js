@@ -60,6 +60,7 @@ $(document).ready(function() {
 
     var modalButton = $("[data-toggle=modal]");
     var modalCloseButton = $(".modal__close");
+    var modalWindow = $(".modal__dialog");
     modalButton.on("click", openModal);
     modalCloseButton.on("click", closeModal);
 
@@ -70,6 +71,15 @@ $(document).ready(function() {
         modalOverlay.removeClass("modal__overlay--visible");
         modalDialog.removeClass("modal__dialog--visible");
         console.log('press esc');
+    });
+
+    $(document).click(function(e) {
+        if (!modalButton.is(e.target) && !modalWindow.is(e.target) && modalWindow.has(e.target).length === 0) {
+            var modalOverlay = $(".modal__overlay");
+            var modalDialog = $(".modal__dialog");
+            modalOverlay.removeClass("modal__overlay--visible");
+            modalDialog.removeClass("modal__dialog--visible");
+        };
     });
 
     function openModal() {
@@ -86,4 +96,5 @@ $(document).ready(function() {
         modalOverlay.removeClass("modal__overlay--visible");
         modalDialog.removeClass("modal__dialog--visible");
     }
+
 });
