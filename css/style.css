@@ -1420,7 +1420,7 @@ template {
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 478px;
-  min-height: 487px;
+  min-height: 95%;
   padding: 33px 88px;
   color: #FFFFFF;
   background-color: #0A223D;
@@ -1828,6 +1828,10 @@ template {
   }
   .packages-card__main-image {
     height: 350px;
+  }
+  .packages-card__main-info {
+    padding-left: 40px;
+    padding-right: 40px;
   }
   .packages-card__img-container {
     width: 100%;
