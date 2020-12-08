@@ -10,6 +10,13 @@
   .card
     width: 220px
     height: 220px
+  .packages
+    &-wrapper
+      grid-template-columns: repeat(4, 1fr)
+    &-card
+      grid-column: span 2
+      &__main
+        grid-column: span 4
 
 @media (max-width: 1024px)
   .container
@@ -124,6 +131,18 @@
   .hotel
     padding-top: 23px
     padding-bottom: 60px
+  .packages
+    &__title
+      margin-bottom: 50px
+      font-size: 30px
+    &__description
+      margin-bottom: 20px
+    &-card
+      &__main
+        &-info
+          padding-top: 30px
+        &-title
+          margin-bottom: 20px
   .newsletter
     &-title
       margin-right: 20px
@@ -235,6 +254,11 @@
         margin-left: 0
   .stars
     flex-basis: auto
+  .packages
+    &-card
+      &__img
+        &-container
+          min-height: 500px
   .reviews
     &-slider
       &__item
@@ -244,8 +268,22 @@
   .modal
     &__dialog
       width: 55%
+      overflow-y: auto
 
-@media (max-width: 660px)
+@media (max-width: 683px)
+  .packages
+    &-card
+      grid-column: span 4
+      &__main
+        flex-direction: column
+        align-items: flex-start
+        &-image
+          height: 350px
+      &__img
+        &-container
+          width: 100%
+          flex-basis: 0
+          min-height: 350px
   .newsletter
     &-wrapper
       flex-wrap: wrap
@@ -354,6 +392,7 @@
   .modal
     &__dialog
       width: 70%
+      padding: 33px 30px
 
 @media (max-width: 320px)
   .container, .newsletter-wrapper
@@ -370,6 +409,12 @@
         background-size: 4px
   .map
     height: 172px
+  .packages
+    padding-top: 20px
+    &__title
+      margin-bottom: 36px
+      font-size: 18px
+      line-height: 22px
   .newsletter
     &-title
       font-size: 20px
