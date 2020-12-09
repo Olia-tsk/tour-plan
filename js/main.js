@@ -110,7 +110,7 @@ $(document).ready(function() {
                 },
                 phone: {
                     required: "Please enter your phone",
-                    phone: "Your phone number must be in the format of +7(999)999-99-99, where 9 is any number"
+                    minlength: jQuery.validator.format("Number must be in format {+7(999)999-99-99}")
                 },
                 modalMail: {
                     required: "We need your email address to contact you",
@@ -124,6 +124,7 @@ $(document).ready(function() {
     $(document).ready(function() {
         $('.phone').mask('+7 (000) 000-00-00');
         //$('.clear-if-not-match').mask("00/00/0000", { clearIfNotMatch: true });
+        //{ 'translation': { 0: { pattern: /[0-5-10]/ } } }
     });
 
     // Анимация при прокручивании

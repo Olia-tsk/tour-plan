@@ -1,9 +1,10 @@
 <?php include('header.php') ?>
 
-<section class="hotel">
+<div class="thanks">
     <div class="container">
-        <h1>Message send!</h1>
-        <p>We gonna call you back within an hour.</p>
+        <h1 class="thanks__title">Message send!</h1>
+        <p class="thanks__text">We gonna call you back within an hour.</p>
+        <button class="button button__thanks">Back</button>
     </div>
 </section>
 
