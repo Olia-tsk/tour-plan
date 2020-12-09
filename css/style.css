@@ -1822,16 +1822,15 @@ template {
   .packages-card {
     grid-column: span 4;
   }
+  .packages-card__info {
+    padding: 30px;
+  }
   .packages-card__main {
     flex-direction: column;
     align-items: flex-start;
   }
   .packages-card__main-image {
     height: 350px;
-  }
-  .packages-card__main-info {
-    padding-left: 40px;
-    padding-right: 40px;
   }
   .packages-card__img-container {
     width: 100%;
