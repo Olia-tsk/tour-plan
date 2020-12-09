@@ -125,4 +125,7 @@ $(document).ready(function() {
         $('.phone').mask('+7 (000) 000-00-00');
         //$('.clear-if-not-match').mask("00/00/0000", { clearIfNotMatch: true });
     });
+
+    // Анимация при прокручивании
+    AOS.init();
 });

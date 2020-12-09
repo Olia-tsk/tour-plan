@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -23,7 +24,7 @@
     <header class="navbar navbar__mobile--fixed">
         <div class="container">
             <div class="navbar-top">
-                <a href="#" class="logo">
+                <a href="#" class="logo" data-aos="zoom-in">
                     <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
                 </a>
 
@@ -65,25 +66,25 @@
                             </button>
                         </form>
                     </li>
-                    <li class="navbar-menu__item">
+                    <li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="400">
                         <a href="#" class="navbar-menu__link">All Deals</a>
                     </li>
-                    <li class="navbar-menu__item">
+                    <li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="500">
                         <a href="#" class="navbar-menu__link">Hotels</a>
                     </li>
-                    <li class="navbar-menu__item">
+                    <li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="600">
                         <a href="#" class="navbar-menu__link">Activities</a>
                     </li>
-                    <li class="navbar-menu__item">
+                    <li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="700">
                         <a href="#" class="navbar-menu__link">Hotel Day Packages</a>
                     </li>
-                    <li class="navbar-menu__item">
+                    <li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="800">
                         <a href="#" class="navbar-menu__link">Restaurants</a>
                     </li>
-                    <li class="navbar-menu__item">
+                    <li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="900">
                         <a href="#" class="navbar-menu__link">Events</a>
                     </li>
-                    <li class="navbar-menu__item">
+                    <li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="1000">
                         <a href="#" class="navbar-menu__link">Rodrigues</a>
                     </li>
                 </ul>
@@ -201,7 +202,7 @@
 
     <section class="packages">
         <div class="container">
-            <h2 class="packages__title">Other Packages</h2>
+            <h2 class="packages__title" data-aos="zoom-in">Other Packages</h2>
 
             <div class="packages-wrapper">
                 <div class="packages-card packages-card__main">
@@ -408,7 +409,7 @@
 
     <section class="reviews">
         <div class="container">
-            <h2 class="reviews__title">
+            <h2 class="reviews__title" data-aos="zoom-in">
                 What people think about&nbsp;us
             </h2>
 
@@ -465,25 +466,27 @@
 
     <section class="activities">
         <div class="container">
-            <h2 class="activities__title">Other Activities</h2>
+            <h2 class="activities__title">
+                Other Activities
+            </h2>
 
             <div class="activities-wrapper">
-                <div class="card activities__card">
+                <div class="card activities__card" data-aos="flip-left" data-aos-delay="100">
                     <img src="img/activity-img/activity-img-1.jpeg" alt="The curious corner of chamarel" class="card__image">
                     <h3 class="card__title">The curious corner of chamarel</h3>
                     <button class="card__button">Book Now</button>
                 </div>
-                <div class="card activities__card">
+                <div class="card activities__card" data-aos="flip-left" data-aos-delay="200">
                     <img src="img/activity-img/activity-img-2.jpeg" alt="Gymkhana club golf course" class="card__image">
                     <h3 class="card__title">Gymkhana club golf course</h3>
                     <button class="card__button">Book Now</button>
                 </div>
-                <div class="card activities__card">
+                <div class="card activities__card" data-aos="flip-left" data-aos-delay="300">
                     <img src="img/activity-img/activity-img-3.jpeg" alt="Tamarind falls hiking trip - full day" class="card__image">
                     <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
                     <button class="card__button">Book Now</button>
                 </div>
-                <div class="card activities__card">
+                <div class="card activities__card" data-aos="flip-left" data-aos-delay="400">
                     <img src="img/activity-img/activity-img-4.jpeg" alt="The blue marine discovery quest" class="card__image">
                     <h3 class="card__title">The blue marine discovery quest</h3>
                     <button class="card__button">Book Now</button>
@@ -611,7 +614,7 @@
                     </ul>
                 </div>
 
-                <div class="footer__contact-form">
+                <div class="footer__contact-form" data-aos="fade-left" data-aos-offset="300" data-aos-duration="300">
                     <h3 class="footer__title footer__title--margin">Send us a message</h3>
                     <form action="send.php" method="post" class="footer__form form" name="footerBtn">
                         <div class="footer__input-group">
@@ -683,6 +686,7 @@
     <script src="js/parallax.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
 
 </body>
