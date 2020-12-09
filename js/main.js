@@ -110,7 +110,7 @@ $(document).ready(function() {
                 },
                 phone: {
                     required: "Please enter your phone",
-                    minlength: jQuery.validator.format("Number must be in format {+7(999)999-99-99}")
+                    minlength: jQuery.validator.format("Number must be in format +7-999-999-99-99")
                 },
                 modalMail: {
                     required: "We need your email address to contact you",
