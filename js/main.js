@@ -97,4 +97,32 @@ $(document).ready(function() {
         modalDialog.removeClass("modal__dialog--visible");
     }
 
+    // Валидация форм
+    $('.form').each(function() {
+        $(this).validate({
+            messages: {
+                subscriptionEmail: {
+                    required: "This form have not to be empty"
+                },
+                name: {
+                    required: "Please specify your name",
+                    minlength: "Your name must be longer than two symbols"
+                },
+                phone: {
+                    required: "Please enter your phone",
+                    phone: "Your phone number must be in the format of +7(999)999-99-99, where 9 is any number"
+                },
+                modalMail: {
+                    required: "We need your email address to contact you",
+                    modalMail: "Your email address must be in the format of name@domain.com"
+                }
+            }
+        });
+    })
+
+    // Маска для полей ввода
+    $(document).ready(function() {
+        $('.phone').mask('+7 (000) 000-00-00');
+        //$('.clear-if-not-match').mask("00/00/0000", { clearIfNotMatch: true });
+    });
 });
