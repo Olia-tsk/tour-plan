@@ -106,7 +106,7 @@ $(document).ready(function() {
                 },
                 name: {
                     required: "Please specify your name",
-                    minlength: "Your name must be longer than two symbols"
+                    minlength: "Your name must be longer than one symbol"
                 },
                 phone: {
                     required: "Please enter your phone",
