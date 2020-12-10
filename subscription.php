@@ -1,10 +1,10 @@
 <?php include('header.php') ?>
 
-<section class="hotel">
+<div class="thanks">
     <div class="container">
-        <h2>Thank you for your subscription!</h2>
+        <h1 class="thanks__title">Thank you for your subscription!</h1>
+        <a href="index.html" class="button thanks__button">Back</a>
     </div>
 </section>
-
 
 <?php include('footer.php') ?>
