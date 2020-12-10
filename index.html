@@ -190,7 +190,6 @@
                     </div>
 
                     <div class="map">
-                        <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac9929bd4dbabf82bb0ab441bb986fd7445992fda0fbd5c225bcc52577d4ebd29&amp;width=100%&amp;height=100%&amp;lang=en_US&amp;scroll=true"></script> -->
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.5414950814966!2d98.29703101434418!3d7.838252394352206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305025650c33dbab%3A0xa67a542329d011e1!2z0J_RhdGD0LrQtdGCLCDQmtCw0YDQvtC9LCDQntGC0LXQu9GMINCl0LjQu9GC0L7QvQ!5e0!3m2!1sru!2sru!4v1606555477851!5m2!1sru!2sru"
                             width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     </div>
@@ -250,7 +249,7 @@
                         <div class="packages-card__price">
                             <span class="packages-card__price_old">$ 10,500</span>
                             <span class="packages-card__price_new">$ 8,500</span>
-                            <button class="packages-card__button">Book Now</button>
+                            <button data-toggle="modal" class="packages-card__button">Book Now</button>
                         </div>
                     </div>
                 </div>
@@ -283,7 +282,7 @@
                         <div class="packages-card__price">
                             <span class="packages-card__price_old">$ 8,500</span>
                             <span class="packages-card__price_new">$ 3,000</span>
-                            <button class="packages-card__button">Book Now</button>
+                            <button data-toggle="modal" class="packages-card__button">Book Now</button>
                         </div>
                     </div>
                 </div>
@@ -316,7 +315,7 @@
                         <div class="packages-card__price">
                             <span class="packages-card__price_old">$ 10,500</span>
                             <span class="packages-card__price_new">$ 9,500</span>
-                            <button class="packages-card__button">Book Now</button>
+                            <button data-toggle="modal" class="packages-card__button">Book Now</button>
                         </div>
                     </div>
                 </div>
@@ -349,7 +348,7 @@
                         <div class="packages-card__price">
                             <span class="packages-card__price_old">$ 4,500</span>
                             <span class="packages-card__price_new">$ 2,500</span>
-                            <button class="packages-card__button">Book Now</button>
+                            <button data-toggle="modal" class="packages-card__button">Book Now</button>
                         </div>
                     </div>
                 </div>
@@ -397,11 +396,11 @@
                 <span class="newsletter-title__strong">Newsletter</span>
             </h2>
 
-            <form action="send.php" method="post" class="subscribe newsletter__subscribe form" name="subscribeBtn">
+            <form action="send.php" method="post" class="subscribe newsletter__subscribe form">
                 <div class="subscribe__input-group">
                     <input type="email" class="subscribe__input" placeholder="Your email address" name="subscriptionEmail" required>
 
-                    <button class="subscribe__button">Send</button>
+                    <button class="subscribe__button" name="button" value="subscribeBtn">Send</button>
                 </div>
             </form>
         </div>
@@ -474,22 +473,22 @@
                 <div class="card activities__card" data-aos="flip-left" data-aos-delay="100">
                     <img src="img/activity-img/activity-img-1.jpeg" alt="The curious corner of chamarel" class="card__image">
                     <h3 class="card__title">The curious corner of chamarel</h3>
-                    <button class="card__button">Book Now</button>
+                    <button data-toggle="modal" class="card__button">Book Now</button>
                 </div>
                 <div class="card activities__card" data-aos="flip-left" data-aos-delay="200">
                     <img src="img/activity-img/activity-img-2.jpeg" alt="Gymkhana club golf course" class="card__image">
                     <h3 class="card__title">Gymkhana club golf course</h3>
-                    <button class="card__button">Book Now</button>
+                    <button data-toggle="modal" class="card__button">Book Now</button>
                 </div>
                 <div class="card activities__card" data-aos="flip-left" data-aos-delay="300">
                     <img src="img/activity-img/activity-img-3.jpeg" alt="Tamarind falls hiking trip - full day" class="card__image">
                     <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
-                    <button class="card__button">Book Now</button>
+                    <button data-toggle="modal" class="card__button">Book Now</button>
                 </div>
                 <div class="card activities__card" data-aos="flip-left" data-aos-delay="400">
                     <img src="img/activity-img/activity-img-4.jpeg" alt="The blue marine discovery quest" class="card__image">
                     <h3 class="card__title">The blue marine discovery quest</h3>
-                    <button class="card__button">Book Now</button>
+                    <button data-toggle="modal" class="card__button">Book Now</button>
                 </div>
             </div>
         </div>
@@ -641,7 +640,7 @@
                         <textarea class="textarea footer__textarea" placeholder="Message" name="message"></textarea>
 
                         <div class="footer__btn">
-                            <button type="submit" class="button footer__button">Send</button>
+                            <button type="submit" class="button footer__button" name="button" value="feedbackBtn">Send</button>
                             <span class="footer__info">* Required Fields</span>
                         </div>
                     </form>
@@ -685,7 +684,7 @@
                     <textarea class="textarea modal__textarea" placeholder="Message" name="message"></textarea>
 
                     <div class="modal__btn">
-                        <button type="submit" class="button modal__button">Send</button>
+                        <button type="submit" class="button modal__button" name="button" value="bookingBtn">Send</button>
                         <span class="modal__info">* Required Fields</span>
                     </div>
                 </form>

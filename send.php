@@ -8,9 +8,11 @@ require 'phpmailer/Exception.php';
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
-$subscribe = $_POST['subscription'];
+$email = $_POST['subscriptionEmail'];
+$modalEmail = $_POST['modalMail'];
+$button = $_POST['button'];
 
-// Формирование самого письма
+// Формирование письма из блока фидбэк
 $title = "Incoming message Best Tour Plan";
 $body = "
 <h2>New message</h2>
@@ -19,7 +21,27 @@ $body = "
 <b>Message:</b><br>$message
 ";
 
-// Настройки PHPMailer
+// Формирование письма с подпиской
+$titleSub = "New subscription at Best Tour Plan!";
+$bodySub = "
+<h2>We have got new subscription</h2>
+<b>Email:</b> $email
+";
+
+// Формирование письма из модального окна
+$titleBooking = "Booking Best Tour Plan";
+$bodyBooking = "
+<h2>New booking</h2>
+<b>Name:</b> $name<br>
+<b>Phone:</b> $phone<br>
+<b>Email:</b> $modalEmail<br><br>
+
+<b>Message:</b><br>$message
+";
+
+
+function sendMessage () {
+    // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 try {
     $mail->isSMTP();   
@@ -53,6 +75,23 @@ else {$result = "error";}
     $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
 }
 
+}
+
+if ($button == "subscribeBtn") {
+    sendMessage($titleSub, $bodySub);
+    header('Location: subscription.php');
+} elseif ($action == "feedbackBtn") { 
+    sendMessage($title, $body);
+    header('Location: thankyou.php');
+} elseif ($action == "bookingBtn") {
+    sendMessage($titleBooking, $bodyBooking);
+    header('Location: booking.php');
+}
+else {
+    echo "Error";
+}
+
+
 // Отображение результата
 //echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
-header('Location: thankyou.php');
+//header('Location: thankyou.php');
