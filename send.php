@@ -35,12 +35,11 @@ $bodyBooking = "
 <b>Name:</b> $name<br>
 <b>Phone:</b> $phone<br>
 <b>Email:</b> $modalEmail<br><br>
-
 <b>Message:</b><br>$message
 ";
 
 
-function sendMessage () {
+function sendMessage ($title,$body) {
     // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 try {
@@ -80,10 +79,12 @@ else {$result = "error";}
 if ($button == "subscribeBtn") {
     sendMessage($titleSub, $bodySub);
     header('Location: subscription.php');
-} elseif ($action == "feedbackBtn") { 
+
+} elseif ($button == "feedbackBtn") { 
     sendMessage($title, $body);
     header('Location: thankyou.php');
-} elseif ($action == "bookingBtn") {
+
+} elseif ($button == "bookingBtn") {
     sendMessage($titleBooking, $bodyBooking);
     header('Location: booking.php');
 }
