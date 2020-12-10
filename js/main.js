@@ -102,10 +102,10 @@ $(document).ready(function() {
         $(this).validate({
             rules: {
                 phone: {
-                  required: true,
-                  minlength: 10
+                    required: true,
+                    minlength: 18
                 }
-              },
+            },
 
             messages: {
                 subscriptionEmail: {
