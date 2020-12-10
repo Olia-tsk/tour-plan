@@ -433,12 +433,30 @@ template {
 }
 
 .navbar-menu__link {
-  color: #FFFFFF;
+  color: rgba(255, 255, 255, 0.4);
   text-decoration: none;
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  text-shadow: none;
+}
+
+.navbar-menu__link::before {
+  color: #FFFFFF;
+  content: attr(data-hover);
+  position: absolute;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.navbar-menu__link:hover::before {
+  transform: scale(0.9);
+  opacity: 0;
+}
+
+.navbar-menu__link:focus::before {
+  transform: scale(0.9);
+  opacity: 0;
 }
 
 .logo {
@@ -753,6 +771,15 @@ template {
   line-height: 25px;
   text-decoration: none;
   color: inherit;
+}
+
+.booking__number:hover {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.booking__number:active {
+  color: #EC1F46;
 }
 
 .booking__button {
@@ -1342,6 +1369,14 @@ template {
   text-decoration: none;
 }
 
+.footer__link:hover {
+  color: white;
+}
+
+.footer__link:active {
+  color: #EC1F46;
+}
+
 .footer__input {
   width: 100%;
 }
@@ -1419,6 +1454,14 @@ template {
   text-decoration: none;
 }
 
+.footer-service__link:hover {
+  color: #afafaf;
+}
+
+.footer-service__link:active {
+  color: #EC1F46;
+}
+
 .footer__payment {
   width: 136px;
 }
@@ -1428,9 +1471,25 @@ template {
   color: inherit;
 }
 
+.footer__phone:hover {
+  color: white;
+}
+
+.footer__phone:active {
+  color: #EC1F46;
+}
+
 .footer__email {
   text-decoration: none;
   color: inherit;
+}
+
+.footer__email:hover {
+  color: white;
+}
+
+.footer__email:active {
+  color: #EC1F46;
 }
 
 .modal__overlay {
@@ -1633,6 +1692,13 @@ template {
   .navbar-menu__link {
     font-size: 12px;
     line-height: 15px;
+    color: #FFFFFF;
+  }
+  .navbar-menu__link::before {
+    content: '';
+  }
+  .navbar-menu__link:hover {
+    transform: none;
   }
   .navbar__search {
     margin-left: auto;
