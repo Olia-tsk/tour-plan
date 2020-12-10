@@ -1,7 +1,9 @@
 <footer class="footer">
         <div class="container">
             <div class="footer-wrapper">
-                <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" class="logo footer__logo">
+                <a href="index.html" class="logo footer__logo">
+                    <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" class="logo footer__logo">
+                </a>
 
                 <div class="footer__list footer__categories">
                     <h3 class="footer__title">ALL CATEGORIES</h3>
@@ -106,23 +108,38 @@
                             <div class="footer__icon-wrapper">
                                 <img src="img/footer-icon-phone.svg" alt="icon: phone" class="footer__icon">
                             </div>
-                            Tel (business hours) : 269 1500 <br> Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00&nbsp;am – 20:00&nbsp;pm) <br> Tel (hotline) Sunday: 52-56-61-38 (08:00&nbsp;am – 14:00&nbsp;pm)
+                            <div class="footer__contacts-container">
+                                Tel (business hours) :
+                                <a href="tel:2691500" class="footer__phone">269 1500</a>
+                                <br> Tel (hotline) Monday - Saturday:
+                                <a href="tel:52-56-61-38" class="footer__phone">52-56-61-38</a> (08:00&nbsp;am – 20:00&nbsp;pm) <br> Tel (hotline) Sunday:
+                                <a href="tel:52-56-61-38" class="footer__phone">52-56-61-38</a> (08:00&nbsp;am – 14:00&nbsp;pm)
+
+                            </div>
+
                         </li>
                         <li class="footer__item footer__item--margin">
                             <div class="footer__icon-wrapper">
                                 <img src="img/footer-icon-mail.svg" alt="icon: mail" class="footer__icon">
                             </div>
-                            cherly.lawson@example.com
+                            <a href="mailto:cherly.lawson@example.com" class="footer__email">cherly.lawson@example.com</a>
                         </li>
                     </ul>
                 </div>
 
-                <div class="footer__contact-form">
+                <div class="footer__contact-form" data-aos="flip-down">
                     <h3 class="footer__title footer__title--margin">Send us a message</h3>
-                    <form action="send.php" method="post" class="footer__form" name="footerBtn">
-                        <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
-                        <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone">
-                        <textarea class="footer__textarea" placeholder="Message" name="message"></textarea>
+                    <form action="send.php" method="post" class="footer__form form" name="footerBtn">
+                        <div class="footer__input-group">
+                            <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" minlength="2" required>
+                        </div>
+
+                        <div class="footer__input-group">
+                            <input type="tel" class="input footer__input phone" placeholder="Phone Number*" name="phone" minlength="10" required>
+                        </div>
+
+                        <textarea class="textarea footer__textarea" placeholder="Message" name="message"></textarea>
+
                         <div class="footer__btn">
                             <button type="submit" class="button footer__button">Send</button>
                             <span class="footer__info">* Required Fields</span>
@@ -148,9 +165,41 @@
         </div>
     </footer>
 
+    <div class="modal">
+        <div class="modal__overlay"></div>
+
+        <div class="modal__dialog">
+            <a href="#" class="modal__close">
+                <img src="img/icon-close.svg" alt="icon: close">
+            </a>
+            <div class="modal__contact-form">
+                <h3 class="modal__title modal__title--margin">Booking</h3>
+
+                <form action="send.php" method="post" class="modal__form form" name="modalBtn">
+                    <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2">
+
+                    <input type="tel" class="input modal__input phone" placeholder="Phone Number*" name="phone" required>
+
+                    <input type="email" class="input modal__input" placeholder="Email*" name="modalMail" required>
+
+                    <textarea class="textarea modal__textarea" placeholder="Message" name="message"></textarea>
+
+                    <div class="modal__btn">
+                        <button type="submit" class="button modal__button">Send</button>
+                        <span class="modal__info">* Required Fields</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
 
 </body>

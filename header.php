@@ -16,19 +16,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header class="navbar navbar__mobile--fixed">
+    <header class="navbar navbar__mobile navbar__mobile--fixed">
         <div class="container">
             <div class="navbar-top">
-                <a href="#" class="logo">
+                <a href="index.html" class="logo" data-aos="zoom-in">
                     <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
                 </a>
 
                 <form action="#" class="search navbar__search navbar__search--mobile--hidden">
-                    <input type="text" class="search__input" placeholder="Search Location">
+                    <input type="search" class="search__input" placeholder="Search Location">
                     <button class="search__button">
                       <img src="img/search.svg" alt="icon: search">
                     </button>
@@ -59,31 +60,31 @@
                     </li>
                     <li class="navbar-menu__item navbar-menu__item--mobile--visible">
                         <form action="#" class="search navbar__search">
-                            <input type="text" class="search__input" placeholder="Search Location">
+                            <input type="search" class="search__input" placeholder="Search Location">
                             <button class="search__button">
                                 <img src="img/search.svg" alt="icon: search">
                             </button>
                         </form>
                     </li>
-                    <li class="navbar-menu__item">
+                    <li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="400">
                         <a href="#" class="navbar-menu__link">All Deals</a>
                     </li>
-                    <li class="navbar-menu__item">
+                    <li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="500">
                         <a href="#" class="navbar-menu__link">Hotels</a>
                     </li>
-                    <li class="navbar-menu__item">
+                    <li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="600">
                         <a href="#" class="navbar-menu__link">Activities</a>
                     </li>
-                    <li class="navbar-menu__item">
+                    <li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="700">
                         <a href="#" class="navbar-menu__link">Hotel Day Packages</a>
                     </li>
-                    <li class="navbar-menu__item">
+                    <li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="800">
                         <a href="#" class="navbar-menu__link">Restaurants</a>
                     </li>
-                    <li class="navbar-menu__item">
+                    <li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="900">
                         <a href="#" class="navbar-menu__link">Events</a>
                     </li>
-                    <li class="navbar-menu__item">
+                    <li class="navbar-menu__item" data-aos="fade-right" data-aos-delay="1000">
                         <a href="#" class="navbar-menu__link">Rodrigues</a>
                     </li>
                 </ul>

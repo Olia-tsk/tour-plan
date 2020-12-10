@@ -100,6 +100,13 @@ $(document).ready(function() {
     // Валидация форм
     $('.form').each(function() {
         $(this).validate({
+            rules: {
+                phone: {
+                  required: true,
+                  minlength: 10
+                }
+              },
+
             messages: {
                 subscriptionEmail: {
                     required: "This form have not to be empty"
@@ -110,7 +117,7 @@ $(document).ready(function() {
                 },
                 phone: {
                     required: "Please enter your phone",
-                    minlength: jQuery.validator.format("Number must be in format +7-999-999-99-99")
+                    minlength: jQuery.validator.format("Number must be in 10 characters")
                 },
                 modalMail: {
                     required: "We need your email address to contact you",
