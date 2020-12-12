@@ -2283,6 +2283,20 @@ img {
 }
 
 @media (max-width: 460px) {
+  .hotel {
+    padding-bottom: 40px;
+  }
+  .hotel-grid {
+    margin-top: 18px;
+  }
+  .hotel-slider {
+    height: 179px;
+  }
+  .hotel-slider__button {
+    width: 12px;
+    height: 12px;
+    background-size: 4px;
+  }
   .packages {
     padding-top: 20px;
   }
@@ -2300,6 +2314,12 @@ img {
   .reviews {
     padding-bottom: 50px;
   }
+  .reviews-slider__item {
+    padding: 0 29px 36px;
+  }
+  .reviews-slider__text {
+    text-align: left;
+  }
   .reviews__title {
     margin-bottom: 42px;
     font-size: 18px;
@@ -2316,20 +2336,6 @@ img {
   .container, .newsletter-wrapper {
     width: 88%;
   }
-  .hotel {
-    padding-bottom: 40px;
-  }
-  .hotel-grid {
-    margin-top: 18px;
-  }
-  .hotel-slider {
-    height: 179px;
-  }
-  .hotel-slider__button {
-    width: 12px;
-    height: 12px;
-    background-size: 4px;
-  }
   .map {
     height: 172px;
   }
@@ -2338,12 +2344,6 @@ img {
   }
   .subscribe__input {
     padding-left: 20px;
-  }
-  .reviews-slider__item {
-    padding: 0 29px 36px;
-  }
-  .reviews-slider__text {
-    text-align: left;
   }
   .activities {
     padding-top: 40px;
