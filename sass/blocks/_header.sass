@@ -25,25 +25,16 @@
         &--visible
           display: none
     &__link
-      color: rgba(255,255,255,0.4)
+      color: $light
       text-decoration: none
       font-weight: 700
       font-size: 14px
       line-height: 18px
       text-transform: uppercase
-      text-shadow: none
-      &::before
-        color: $light
-        content: attr(data-hover)
-        position: absolute
-        transition: transform 0.3s, opacity 0.3s
-      &:hover::before
-        transform: scale(0.9)
-        opacity: 0
-      &:focus::before
-        transform: scale(0.9)
-        opacity: 0
-
+      &:hover
+        color: #BDBDBD
+      &:active
+        color: $primary-color
 .logo
   width: 177px
 .search

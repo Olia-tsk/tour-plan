@@ -526,30 +526,20 @@ img {
 }
 
 .navbar-menu__link {
-  color: rgba(255, 255, 255, 0.4);
+  color: #FFFFFF;
   text-decoration: none;
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  text-shadow: none;
 }
 
-.navbar-menu__link::before {
-  color: #FFFFFF;
-  content: attr(data-hover);
-  position: absolute;
-  transition: transform 0.3s, opacity 0.3s;
+.navbar-menu__link:hover {
+  color: #BDBDBD;
 }
 
-.navbar-menu__link:hover::before {
-  transform: scale(0.9);
-  opacity: 0;
-}
-
-.navbar-menu__link:focus::before {
-  transform: scale(0.9);
-  opacity: 0;
+.navbar-menu__link:active {
+  color: #EC1F46;
 }
 
 .logo {
@@ -1812,13 +1802,12 @@ img {
   .navbar-menu__link {
     font-size: 12px;
     line-height: 15px;
-    color: #FFFFFF;
-  }
-  .navbar-menu__link::before {
-    content: '';
   }
   .navbar-menu__link:hover {
-    transform: none;
+    color: #FFFFFF;
+  }
+  .navbar-menu__link:active {
+    color: #FFFFFF;
   }
   .navbar__search {
     margin-left: auto;

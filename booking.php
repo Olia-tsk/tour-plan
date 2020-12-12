@@ -6,6 +6,6 @@
         <p class="thanks__title">Our manager will call you in five minutes.</p>
         <a href="index.html" class="button thanks__button">Back</a>
     </div>
-</section>
+</div>
 
 <?php include('footer.php') ?>
