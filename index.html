@@ -114,11 +114,11 @@
                 <div class="hotel-info__text">
                     <div class="hotel-wrapper">
                         <div class="stars">
-                            <img src="img/star.svg" alt="star">
-                            <img src="img/star.svg" alt="star">
-                            <img src="img/star.svg" alt="star">
-                            <img src="img/star.svg" alt="star">
-                            <img src="img/star.svg" alt="star">
+                            <img src="img/star.svg" alt="star" class="stars__img">
+                            <img src="img/star.svg" alt="star" class="stars__img">
+                            <img src="img/star.svg" alt="star" class="stars__img">
+                            <img src="img/star.svg" alt="star" class="stars__img">
+                            <img src="img/star.svg" alt="star" class="stars__img">
                         </div>
                         <h1 class="hotel-name hotel-info__name">GRAND HILTON HOTEL</h1>
                         <span class="offer hotel-info__offer">Flash Offer</span>
@@ -191,7 +191,7 @@
 
                     <div class="map">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.5414950814966!2d98.29703101434418!3d7.838252394352206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305025650c33dbab%3A0xa67a542329d011e1!2z0J_RhdGD0LrQtdGCLCDQmtCw0YDQvtC9LCDQntGC0LXQu9GMINCl0LjQu9GC0L7QvQ!5e0!3m2!1sru!2sru!4v1606555477851!5m2!1sru!2sru"
-                            width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                            width="100%" height="100%" style="border:0; width: 100%; height: 100%;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     </div>
                 </div>
             </div>
@@ -381,7 +381,7 @@
                         <div class="packages-card__price">
                             <span class="packages-card__price_old">$ 6,500</span>
                             <span class="packages-card__price_new">$ 3,500</span>
-                            <button class="packages-card__button">Book Now</button>
+                            <button class="packages-card__button" data-toggle="modal">Book Now</button>
                         </div>
                     </div>
                 </div>
@@ -472,22 +472,22 @@
             <div class="activities-wrapper">
                 <div class="card activities__card" data-aos="flip-left" data-aos-delay="100">
                     <img src="img/activity-img/activity-img-1.jpeg" alt="The curious corner of chamarel" class="card__image">
-                    <h3 class="card__title">The curious corner of chamarel</h3>
+                    <h3 class="card__title">The curious corner<br> of chamarel</h3>
                     <button data-toggle="modal" class="card__button">Book Now</button>
                 </div>
                 <div class="card activities__card" data-aos="flip-left" data-aos-delay="200">
                     <img src="img/activity-img/activity-img-2.jpeg" alt="Gymkhana club golf course" class="card__image">
-                    <h3 class="card__title">Gymkhana club golf course</h3>
+                    <h3 class="card__title">Gymkhana club golf<br> course</h3>
                     <button data-toggle="modal" class="card__button">Book Now</button>
                 </div>
                 <div class="card activities__card" data-aos="flip-left" data-aos-delay="300">
                     <img src="img/activity-img/activity-img-3.jpeg" alt="Tamarind falls hiking trip - full day" class="card__image">
-                    <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
+                    <h3 class="card__title">Tamarind falls hiking<br> trip - full day</h3>
                     <button data-toggle="modal" class="card__button">Book Now</button>
                 </div>
                 <div class="card activities__card" data-aos="flip-left" data-aos-delay="400">
                     <img src="img/activity-img/activity-img-4.jpeg" alt="The blue marine discovery quest" class="card__image">
-                    <h3 class="card__title">The blue marine discovery quest</h3>
+                    <h3 class="card__title">The blue marine discovery<br> quest</h3>
                     <button data-toggle="modal" class="card__button">Book Now</button>
                 </div>
             </div>
@@ -589,7 +589,7 @@
                 </div>
 
                 <div class="footer__contact-details">
-                    <h3 class="footer__title footer__title--margin">Contact Details</h3>
+                    <h3 class="footer__title footer__title--margin footer__title--contact-margin">Contact Details</h3>
                     <p class="footer__text">
                         Feel free to contact us by phone, email or by our contact&nbsp;form
                     </p>
@@ -624,7 +624,7 @@
                 </div>
 
                 <div class="footer__contact-form" data-aos="flip-down">
-                    <h3 class="footer__title footer__title--margin">Send us a message</h3>
+                    <h3 class="footer__title footer__title--margin footer__title--message-margin">Send us a message</h3>
                     <form action="send.php" method="post" class="footer__form form" name="footerBtn">
                         <div class="footer__input-wrapper">
                             <div class="footer__input-group">

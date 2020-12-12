@@ -74,7 +74,13 @@
     flex-direction: column
     justify-content: space-between
 .stars
+  display: flex
+  height: 10px
   flex-basis: 100%
+  &__img
+    height: 8px
+    width: 8px
+    margin-right: 2px
 .offer
   padding: 4px 9px
   font-weight: 600
@@ -106,7 +112,7 @@
 .booking
   width: 350px
   min-height: 210px
-  padding: 28px
+  padding: 29px 22px 26px 22px
   font-family: 'Nunito', sans-serif
   color: $light
   background-color: $dark
@@ -166,7 +172,7 @@
   &__number:hover
     font-weight: 700
     font-size: 20px
-    
+
   &__number:active
     color: $primary-color
   &__button
