@@ -1,97 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
-*:focus {
-  outline: none;
-}
-
-body {
-  font-family: 'Mulish', sans-serif;
-  color: #333333;
-  background-color: #F5FAFE;
-}
-
-.container {
-  max-width: 1110px;
-  margin: auto;
-}
-
-img {
-  max-width: 100%;
-}
-
-.input {
-  background-color: #fff;
-  border-radius: 4px;
-  border: none;
-  padding: 0 23px;
-  height: 50px;
-}
-
-.textarea {
-  height: 123px;
-  background-color: white;
-  border-radius: 4px;
-  padding: 18px 23px;
-  border: none;
-  resize: none;
-}
-
-.button {
-  padding: 18px 65px;
-  background-color: #EC1F46;
-  border: none;
-  border-radius: 4px;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 15px;
-  color: #FFFFFF;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-.button:hover {
-  opacity: 0.6;
-}
-
-.button:active {
-  color: #0A223D;
-}
-
-.search__button:hover {
-  opacity: 0.6;
-}
-
-.search__button:active {
-  background-color: #0A223D;
-}
-
-.packages-card__button:hover, .card__button:hover {
-  opacity: 0.6;
-}
-
-.packages-card__button:active, .card__button:active {
-  color: #0A223D;
-}
-
-.subscribe__button:hover {
-  opacity: 0.6;
-}
-
-.subscribe__button:active {
-  background-color: #0A223D;
-}
-
-.hotel-slider__button:hover, .reviews-slider__button:hover {
-  opacity: 0.6;
-}
-
-.error {
-  color: #EC1F46;
-  font-size: 14px;
-}
-
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -429,6 +335,100 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
+  color: #333333;
+  background-color: #F5FAFE;
+}
+
+.container {
+  max-width: 1110px;
+  margin: auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+.input {
+  background-color: #fff;
+  border-radius: 4px;
+  border: none;
+  padding: 0 23px;
+  height: 50px;
+}
+
+.textarea {
+  height: 123px;
+  background-color: white;
+  border-radius: 4px;
+  padding: 18px 23px;
+  border: none;
+  resize: none;
+}
+
+.button {
+  padding: 18px 65px;
+  background-color: #EC1F46;
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.button:hover {
+  opacity: 0.6;
+}
+
+.button:active {
+  color: #0A223D;
+}
+
+.search__button:hover {
+  opacity: 0.6;
+}
+
+.search__button:active {
+  background-color: #0A223D;
+}
+
+.packages-card__button:hover, .card__button:hover {
+  opacity: 0.6;
+}
+
+.packages-card__button:active, .card__button:active {
+  color: #0A223D;
+}
+
+.subscribe__button:hover {
+  opacity: 0.6;
+}
+
+.subscribe__button:active {
+  background-color: #0A223D;
+}
+
+.hotel-slider__button:hover, .reviews-slider__button:hover {
+  opacity: 0.6;
+}
+
+.error {
+  color: #EC1F46;
+  font-size: 14px;
 }
 
 .navbar {
@@ -1321,7 +1321,11 @@ template {
 
 .footer__logo {
   width: 166px;
+  height: 173px;
   align-self: center;
+  justify-self: start;
+  margin-top: 5px;
+  margin-left: -4px;
   grid-row: 1 / 3;
   text-decoration: none;
 }
@@ -1888,6 +1892,9 @@ template {
   .container, .newsletter-wrapper {
     width: 91%;
   }
+  .navbar-menu {
+    justify-content: space-around;
+  }
   .navbar__search {
     margin-left: 47px;
   }
@@ -2272,6 +2279,9 @@ template {
   }
   .reviews-slider__item {
     padding: 0 29px 36px;
+  }
+  .reviews-slider__text {
+    text-align: left;
   }
   .activities {
     padding-top: 40px;
