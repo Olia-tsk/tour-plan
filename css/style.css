@@ -1805,6 +1805,7 @@ img {
     padding-bottom: 30px;
   }
   .navbar-menu {
+    justify-content: space-around;
     padding-top: 22px;
     padding-bottom: 22px;
   }
@@ -1947,9 +1948,6 @@ img {
 @media (max-width: 768px) {
   .container, .newsletter-wrapper {
     width: 91%;
-  }
-  .navbar-menu {
-    justify-content: space-around;
   }
   .navbar__search {
     margin-left: 47px;
@@ -2284,6 +2282,36 @@ img {
   }
 }
 
+@media (max-width: 460px) {
+  .packages {
+    padding-top: 20px;
+  }
+  .packages__title {
+    margin-bottom: 36px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .newsletter-title {
+    font-size: 20px;
+  }
+  .newsletter-title__strong {
+    font-size: 30px;
+  }
+  .reviews {
+    padding-bottom: 50px;
+  }
+  .reviews__title {
+    margin-bottom: 42px;
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .activities__title {
+    margin-bottom: 36px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
 @media (max-width: 320px) {
   .container, .newsletter-wrapper {
     width: 88%;
@@ -2305,33 +2333,11 @@ img {
   .map {
     height: 172px;
   }
-  .packages {
-    padding-top: 20px;
-  }
-  .packages__title {
-    margin-bottom: 36px;
-    font-size: 18px;
-    line-height: 22px;
-  }
-  .newsletter-title {
-    font-size: 20px;
-  }
-  .newsletter-title__strong {
-    font-size: 30px;
-  }
   .subscribe {
     width: 280px;
   }
   .subscribe__input {
     padding-left: 20px;
-  }
-  .reviews {
-    padding-bottom: 50px;
-  }
-  .reviews__title {
-    margin-bottom: 42px;
-    font-size: 18px;
-    line-height: 23px;
   }
   .reviews-slider__item {
     padding: 0 29px 36px;
@@ -2342,11 +2348,6 @@ img {
   .activities {
     padding-top: 40px;
     padding-bottom: 40px;
-  }
-  .activities__title {
-    margin-bottom: 36px;
-    font-size: 18px;
-    line-height: 22px;
   }
   .card {
     height: 255px;

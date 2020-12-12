@@ -62,6 +62,7 @@
       padding-top: 30px
       padding-bottom: 30px
     &-menu
+      justify-content: space-around
       padding-top: 22px
       padding-bottom: 22px
       &__link
@@ -184,8 +185,6 @@
   .container, .newsletter-wrapper
     width: 91%
   .navbar
-    &-menu
-      justify-content: space-around
     &__search
       margin-left: 47px
   .hotel
@@ -469,6 +468,30 @@
       width: 70%
       padding: 33px 30px
 
+@media (max-width: 460px)
+  .packages
+    padding-top: 20px
+    &__title
+      margin-bottom: 36px
+      font-size: 18px
+      line-height: 22px
+  .newsletter
+    &-title
+      font-size: 20px
+      &__strong
+        font-size: 30px
+  .reviews
+    padding-bottom: 50px
+    &__title
+      margin-bottom: 42px
+      font-size: 18px
+      line-height: 23px
+  .activities
+    &__title
+      margin-bottom: 36px
+      font-size: 18px
+      line-height: 22px
+
 @media (max-width: 320px)
   .container, .newsletter-wrapper
     width: 88%
@@ -484,27 +507,11 @@
         background-size: 4px
   .map
     height: 172px
-  .packages
-    padding-top: 20px
-    &__title
-      margin-bottom: 36px
-      font-size: 18px
-      line-height: 22px
-  .newsletter
-    &-title
-      font-size: 20px
-      &__strong
-        font-size: 30px
   .subscribe
     width: 280px
     &__input
       padding-left: 20px
   .reviews
-    padding-bottom: 50px
-    &__title
-      margin-bottom: 42px
-      font-size: 18px
-      line-height: 23px
     &-slider
       &__item
         padding: 0 29px 36px
@@ -513,10 +520,6 @@
   .activities
     padding-top: 40px
     padding-bottom: 40px //меньше чем в макете на размер отступа карточек
-    &__title
-      margin-bottom: 36px
-      font-size: 18px
-      line-height: 22px
   .card
     height: 255px
   .footer
