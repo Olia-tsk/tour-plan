@@ -2285,6 +2285,9 @@ template {
   .card {
     height: 255px;
   }
+  .footer__logo {
+    margin-bottom: 10px;
+  }
   .footer__social-network {
     flex-direction: column;
   }
@@ -2300,6 +2303,19 @@ template {
   .footer__title--inline {
     margin-bottom: 20px;
   }
+  .footer__title--contact-margin {
+    margin-top: 10px;
+    margin-bottom: 26px;
+  }
+  .footer__title--message-margin {
+    margin-top: 5px;
+  }
+  .footer__icon-wrapper {
+    margin-right: 7px;
+  }
+  .footer__item--margin {
+    margin-bottom: 21px;
+  }
   .footer__textarea {
     margin-bottom: 15px;
   }
@@ -2312,7 +2328,7 @@ template {
     margin-bottom: 15px;
   }
   .footer-service {
-    margin-top: 30px;
+    margin-top: 25px;
   }
   .footer-service__list {
     justify-content: space-between;
